@@ -1,8 +1,17 @@
 .navbar {
   display: flex;
-  justify-content: center;
-  background-color: #013914;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1b1a1d;
   color: white;
+  transition: all 0.3s ease;
+  &.active {
+    background-color: white;
+    color: black;
+  }
+
   .container {
     width: 1400px;
     display: flex;
@@ -24,6 +33,35 @@
       gap: 24px;
       font-weight: 500;
       font-family: "Montserrat", sans-serif;
+      .user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        img {
+          width: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        span {
+          margin-left: 5px;
+        }
+        .options {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          padding: 20px;
+          color: #1b1a1d;
+          border: 1px solid wheat;
+          border-radius: 10px;
+          gap: 14px;
+          width: 200px;
+          font-weight: 300;
+        }
+      }
       button {
         color: white;
         padding: 10px 20px;
@@ -36,7 +74,33 @@
           background-color: #1dbf73;
           border: 1px solid #1dbf73;
         }
+        &.active {
+          color: black;
+          border: 1px solid gray;
+          background-color: transparent;
+        }
       }
     }
   }
+  hr {
+    width: 100%;
+    height: 0;
+    border: 0.5px solid white;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 1400px;
+    padding: 10px 0;
+    font-weight: 300;
+    color: gray;
+    span {
+      cursor: pointer;
+      font-family: "Montserrat";
+    }
+  }
+}
+.dummy {
+  height: 3000px;
 }
