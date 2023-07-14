@@ -1,0 +1,75 @@
+.featured {
+  background-color: #1b1a1d;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  .container {
+    width: 1400px;
+    height: 600px;
+    background-image: url("https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/1b6990afe0934244dda2c9aeed5de8d9-1674663021930/bg-hero-6-1792-x1.png");
+    background-position: 65% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 50%;
+      height: 500px;
+      gap: 24px;
+      h1 {
+        color: white;
+        font-size: 42px;
+        line-height: 56px;
+        i {
+          font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial,
+            sans-serif;
+          font-weight: 200;
+        }
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        background-color: white;
+        border-radius: 5px;
+        .searchInput {
+          input {
+            width: 100%;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+          }
+        }
+        .submitButton {
+          background-color: #d6ee00;
+          border: none;
+          border-radius: 5px;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+      .popular {
+        color: white;
+        font-weight: bold;
+        span {
+          border: 1px solid white;
+          border-radius: 20px;
+          margin: 0 5px;
+          padding: 3px 8px;
+          cursor: pointer;
+          &:hover {
+            color: #1b1a1d;
+            background-color: white;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
