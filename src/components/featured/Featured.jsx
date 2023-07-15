@@ -19,7 +19,7 @@ export const Featured = () => {
               <input type="text" placeholder="Search for the services." />
             </div>
             <button className="submitButton">
-              <span class="material-symbols-outlined">search</span>
+              <span className="material-symbols-outlined">search</span>
             </button>
           </div>
           <div className="popular">

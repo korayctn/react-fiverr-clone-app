@@ -1,0 +1,59 @@
+.slider {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  padding-bottom: 80px;
+  .container {
+    h1 {
+      position: relative;
+      left: 12%;
+      margin-bottom: 20px;
+      color: #404145;
+    }
+  }
+}
+.swiper {
+  width: 1400px;
+  display: flex;
+  height: 345px;
+}
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #e2e2e2;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  /* Center slide text vertically */
+  display: flex;
+  .textContainer {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+  }
+  span {
+    margin: 20px 10px;
+    left: 10px;
+    position: absolute;
+    color: white;
+  }
+  .firstText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .secondText {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

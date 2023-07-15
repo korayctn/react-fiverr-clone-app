@@ -1,0 +1,129 @@
+.videopart {
+  background-color: #f1fdf7;
+  height: 467px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  color: #404145;
+  .container {
+    width: 1400px;
+    display: flex;
+    .left {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+
+      .left-part {
+        padding: 20px 0 0 0;
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+        .title {
+          display: flex;
+          align-items: center;
+          h6 {
+            margin-left: 10px;
+          }
+        }
+        .desc p {
+          font-size: 18px;
+          font-weight: 400;
+          color: #62646a;
+          line-height: 26px;
+          padding-top: 10px;
+        }
+      }
+    }
+    .right {
+      width: 65%;
+      position: relative;
+      video {
+        top: -30px;
+        right: 0;
+        position: absolute;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+.business {
+  height: 500px;
+  background-color: #0d084d;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  .container {
+    width: 1400px;
+    background-color: #0d084d;
+    display: flex;
+    .left {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      .item {
+        margin-bottom: 30px;
+        p {
+          color: white;
+          font-size: 20px;
+          line-height: 26px;
+        }
+        h2 {
+          font-size: 32px;
+          color: white;
+          font-family: DomaineDisplay, Helvetica Neue, Helvetica, Arial,
+            sans-serif;
+        }
+        button {
+          background-color: #19a463;
+          padding: 10px 20px;
+          color: white;
+          border-radius: 7px;
+          font-size: 20px;
+          margin-top: 40px;
+          cursor: pointer;
+          font-weight: 600;
+          &:hover {
+            background-color: #0a7945;
+          }
+          border: none;
+          outline: none;
+        }
+        .item-part {
+          color: white;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          h4 {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: 400;
+          }
+          svg {
+            fill: #7a7d85;
+          }
+        }
+      }
+      .item-first {
+        display: flex;
+        align-items: center;
+      }
+      .pill {
+        background-color: blueviolet;
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-weight: bold;
+        color: white;
+        font-size: 12px;
+      }
+    }
+    .right {
+      width: 50%;
+      position: relative;
+      img {
+        position: absolute;
+        left: 100px;
+      }
+    }
+  }
+}
