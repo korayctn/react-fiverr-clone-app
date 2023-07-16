@@ -5,6 +5,7 @@ import { Featured } from "../../components/Featured/Featured";
 import { TrustedBy } from "../../components/trustedBy/trustedBy";
 import { Slider } from "../../components/Slider/Slider";
 import { Videopart } from "../../components/Videopart/Videopart";
+import { InspiringWork } from "../../components/InspiringWork/InspiringWork";
 
 export const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ export const Homepage = () => {
       <TrustedBy />
       <Slider />
       <Videopart />
+      <InspiringWork />
     </div>
   );
 };

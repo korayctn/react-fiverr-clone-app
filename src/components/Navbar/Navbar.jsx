@@ -74,23 +74,22 @@ export const Navbar = () => {
             )}
           </div>
         </div>
-        {active ||
-          (pathname !== "/" && (
-            <>
-              <hr />
-              <div className="menu">
-                <Link to="/n">Graphics & Design</Link>
-                <Link to="/">Video & Animation</Link>
-                <Link to="/">Writing & Translation</Link>
-                <Link to="/">AI Services</Link>
-                <Link to="/">Digital Marketing</Link>
-                <Link to="/">Music & Audio</Link>
-                <Link to="/">Programming and Tech</Link>
-                <Link to="/">Business</Link>
-                <Link to="/">Lifestyle</Link>
-              </div>
-            </>
-          ))}
+        {(active || pathname !== "/") && (
+          <>
+            <hr />
+            <div className="menu">
+              <Link to="/n">Graphics & Design</Link>
+              <Link to="/">Video & Animation</Link>
+              <Link to="/">Writing & Translation</Link>
+              <Link to="/">AI Services</Link>
+              <Link to="/">Digital Marketing</Link>
+              <Link to="/">Music & Audio</Link>
+              <Link to="/">Programming and Tech</Link>
+              <Link to="/">Business</Link>
+              <Link to="/">Lifestyle</Link>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

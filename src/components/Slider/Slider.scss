@@ -12,17 +12,18 @@
   }
 }
 .swiper {
-  width: 1400px;
+  width: 1440px;
   display: flex;
   height: 345px;
 }
 .swiper-slide {
   text-align: left;
   font-size: 18px;
+  border-radius: 5px;
   background: #e2e2e2;
   cursor: pointer;
   overflow: hidden;
-  &:hover img {
+  &:hover .sliderImg {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
   }

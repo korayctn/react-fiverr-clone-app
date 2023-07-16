@@ -6,20 +6,17 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import SliderData from "../../../public/data/SliderData";
 import { Link } from "react-router-dom";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 export const Slider = () => {
   return (
     <div className="slider">
       <div className="container">
         <h1>Popular services</h1>
         <Swiper
-          spaceBetween={10}
+          spaceBetween={30}
           slidesPerView={5}
-          pagination={{
-            type: "fraction",
-          }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Navigation]}
         >
           {SliderData.map((slide, index) => {
             return (
@@ -30,7 +27,11 @@ export const Slider = () => {
                     <br />
                     <span className="secondText">{slide.title2}</span>
                   </div>
-                  <img src={slide.img} alt={slide.title2} />
+                  <img
+                    className="sliderImg"
+                    src={slide.img}
+                    alt={slide.title2}
+                  />
                 </Link>
               </SwiperSlide>
             );

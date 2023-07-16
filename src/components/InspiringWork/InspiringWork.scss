@@ -1,0 +1,49 @@
+.inspiringWork {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 110px 50px;
+  .inspiringWorkHeader {
+    h2 {
+      font-size: 36px;
+      margin-left: 230px;
+      padding-bottom: 20px;
+      color: #404145;
+    }
+  }
+}
+.inspiringSlideTextContainer {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 75px;
+  .inspiringSlideImg {
+    width: 25%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+  .inspiringSlideText {
+    width: 70%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h4 {
+      font-weight: 400;
+      font-size: 18px;
+    }
+    p {
+      color: #95979d;
+      font-size: 16px;
+    }
+  }
+}
