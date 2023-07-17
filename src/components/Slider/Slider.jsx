@@ -21,7 +21,7 @@ export const Slider = () => {
           {SliderData.map((slide, index) => {
             return (
               <SwiperSlide key={index}>
-                <Link to="/gig/123">
+                <Link to="/gigs?cat=design">
                   <div className="textContainer">
                     <span className="firstText">{slide.title1}</span>
                     <br />

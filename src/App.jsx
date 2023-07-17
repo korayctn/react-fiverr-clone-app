@@ -54,11 +54,11 @@ function App() {
           element: <Orders />,
         },
         {
-          path: "/gig/:id",
+          path: "/gig/123",
           element: <Gig />,
         },
         {
-          path: "/gigs",
+          path: "/gigs/",
           element: <Gigs />,
         },
         {
