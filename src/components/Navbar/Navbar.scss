@@ -53,7 +53,9 @@
           top: 60px;
           right: 0;
           padding: 20px;
-          color: #ffffff;
+          z-index: 998;
+          color: black;
+          background-color: white;
           border: 1px solid wheat;
           border-radius: 10px;
           gap: 14px;
