@@ -132,10 +132,11 @@ export const Gig = () => {
               </div>
               <hr />
               <p>
-                My name is Anna, I enjoy creating AI generated art in my spare
-                time. I have a lot of experience using the AI program and that
-                means I know what to prompt the AI with to get a great and
-                incredibly detailed result.
+                I'm Vlad, a digital artist, and I create atmospheric concept
+                arts, illustrations and photos of unique characters, landscapes
+                and objects using best and most innovative AI Midjourney. I can
+                create art for your project on any topic, so feel free to share
+                your ideas with me and we will make ideas into reality!
               </p>
             </div>
           </div>
