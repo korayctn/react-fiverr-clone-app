@@ -58,7 +58,7 @@ export const Navbar = () => {
                   <div className="options">
                     {currentUser?.isSeller ? (
                       <>
-                        <Link to="/gigs">Gigs</Link>
+                        <Link to="/mygigs">Gigs</Link>
                         <Link to="/add">Add new gig</Link>
 
                         <Link to="/orders">Orders</Link>
